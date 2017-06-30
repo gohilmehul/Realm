@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RealMDemo</string>
+    <string name="title_activity_savedata">SavedataActivity</string>
+</resources>
