@@ -9,17 +9,20 @@ realm for android
 https://news.realm.io/news/realm-for-android/
 
 Add the class path dependency to the project level build.gradle file.
+
 buildscript {
     repositories {
         jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.1'
-        classpath "io.realm:realm-gradle-plugin:3.4.0" //Add this line //https://realm.io/docs/java/latest/#queries   check latest version of realm
+        classpath "io.realm:realm-gradle-plugin:3.4.0" //Add this line 
+        //https://realm.io/docs/java/latest/#queries  
+        //check latest version of realm
        
     }
-    
 }
+
 allprojects {
     repositories {
         jcenter()
@@ -64,7 +67,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', 
+    {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     
