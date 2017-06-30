@@ -8,21 +8,26 @@ Add the class path dependency to the project level build.gradle file.
 
 
 buildscript {
+
     repositories {
         jcenter()
     }
+    
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.1'
         classpath "io.realm:realm-gradle-plugin:3.4.0"    // https://realm.io/docs/java/latest/   //find latest version of realm 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+    
 }
 
 allprojects {
+
     repositories {
         jcenter()
     }
+    
 }
 
 task clean(type: Delete) {
@@ -30,7 +35,7 @@ task clean(type: Delete) {
 }
 
 
- Apply the realm-android plugin to the top of the application level build.gradle file.
+Apply the realm-android plugin to the top of the application level build.gradle file.
 
 apply plugin: 'realm-android'
 
